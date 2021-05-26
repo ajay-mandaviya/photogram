@@ -1,0 +1,38 @@
+:root {
+    --primary: #efb6b2;
+    --secondary: #4e4e4e;
+    --error: #ff4a4a;
+  }
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.header h2{
+    color:var(--primary);
+    letter-spacing:2px;
+    font-size: 1.5rem;
+    font-weight:normal;
+}
+.header button{
+    width: 5rem;
+    height: 2rem;
+    margin:0  5px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    background-color:rgb(233, 227, 227);
+    color:gray;
+}
+button:hover{
+    background-color:var(--primary);
+    color:white;
+}
+.title{
+    margin: 70px auto;
+    text-align:center;
+    color:var(--secondary)
+}
+.title h2{
+    font-size:2.5rem;
+}
