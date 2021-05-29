@@ -2,6 +2,7 @@
 import firebase from 'firebase/app'
 import "firebase/storage";
 import "firebase/firestore";
+import 'firebase/auth'
 var firebaseConfig = {
     apiKey: "AIzaSyBLbFy7g5UmOUkj1UEfjKTKIwWHwCdMs5U",
     authDomain: "photo-gram-959ed.firebaseapp.com",
@@ -14,9 +15,10 @@ var firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   const projectStorage = firebase.storage();
   const projectFirestore = firebase.firestore();
+  const projectAuth = firebase.auth();
   const timestamp = firebase.firestore.FieldValue.serverTimestamp;
 
-  export { projectStorage , projectFirestore , timestamp};
+  export { projectStorage , projectFirestore , projectAuth , timestamp};
 
 //   rules_version = '2';
 // service firebase.storage {
